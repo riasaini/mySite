@@ -33,7 +33,6 @@ body {
     color: black;
     width: 90%;
     box-sizing:border-box;
-    
     border-style: solid;
   }
 
@@ -54,6 +53,15 @@ body {
     width: 150%;
     max-width: 20px;
     max-height: 20px;
+    object-fit: contain;
+    border-radius: 10%;
+  }
+
+  .contact-links:hover {
+    height: 160%;
+    width: 160%;
+    max-width: 30px;
+    max-height: 30px;
     object-fit: contain;
   }
   
@@ -103,7 +111,6 @@ h2 {
 .about-header {
   display:ruby-text;
   bottom: 0%;
-  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .about-title {
