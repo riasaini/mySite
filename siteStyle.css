@@ -194,6 +194,6 @@ h2 {
 
 @media (max-width: 768px) {
   .main #openbtn {
-    display: contents;
+    display: block;
   }
 }
