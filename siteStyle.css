@@ -41,13 +41,14 @@ body {
 
 #openbtn {
   position: absolute;
-  background: none;
-  font-size: larger;
-  border: none;
   left: 0;
   top: 5%;
   margin: 5%;
   color: black;
+  border: none;
+  font-size: larger;
+  background: none;
+  text-decoration: none;
   display: none;
 }
 
