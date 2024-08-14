@@ -191,3 +191,9 @@ h2 {
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0%;
+  }
+}
