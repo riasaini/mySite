@@ -193,13 +193,14 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  #res-main {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 768px) {
   #main-about {
     margin-left: 0%;
   }
 }
 
-@media (max-width: 768px) {
-  #res-main {
-    margin-left: 3%;
-  }
-}
