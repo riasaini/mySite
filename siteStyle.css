@@ -107,7 +107,9 @@ h2 {
   font-size: 300%;
 }
 
-
+.about-heder {
+  display: flex;
+}
 
 .about {
     text-align: justify;
