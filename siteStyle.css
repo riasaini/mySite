@@ -6,7 +6,7 @@ body {
 
 .sidenav {
     height: 25%;
-    width: 18%;
+    width: 48%;
     position: fixed;
     box-sizing:border-box;
     top: 5%;
@@ -159,7 +159,6 @@ h2 {
 @media (max-width: 768px) {
   .sidenav {
       display: none;
-      width: 40%;
   }
 }
 
