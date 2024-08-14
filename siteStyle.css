@@ -34,7 +34,6 @@ body {
   height: 50px;
   width: 50px;
   text-decoration: none;
-  display: none;
 }
 
 #openbtn {
@@ -43,7 +42,6 @@ body {
   top: 5%;
   margin: 5%;
   color: black;
-  display: none;
 }
 
 #sidenav a:hover {
