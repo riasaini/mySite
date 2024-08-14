@@ -4,15 +4,16 @@ body {
     background-image: url("plainBackground.jpg");
   }
 
-.sidenav {
+#sidenav {
     height: 25%;
     width: 18%;
     position: fixed;
     box-sizing:border-box;
     top: 5%;
+    transition: 0.5s;
   }
 
-.sidenav a {
+#sidenav a {
     display: block;
     text-align: left;
     color: black;
@@ -23,12 +24,33 @@ body {
     margin: 5%;
   }
 
-.sidenav a:hover {
+#closebtn {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  margin: 5%;
+  color: black;
+  border: none;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+#openbtn {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  margin: 5%;
+  color: black;
+  border: none;
+}
+
+#sidenav a:hover {
     color: black;
     font-size: larger;
   }
 
-.sidenav a.active {
+#sidenav a.active {
     color: black;
     width: 90%;
     box-sizing:border-box;
@@ -157,8 +179,16 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .sidenav {
+  #sidenav {
       display: none;
+  }
+
+  #closebtn {
+    display: none;
+  }
+  
+  #openbtn {
+    display: none;
   }
 }
 

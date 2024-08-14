@@ -5,11 +5,30 @@
           content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="siteStyle.css">   
     <title>Ria Saini</title>
+
+
+    <script>
+        function closeNav(){
+            document.getElementById("sidenav").style.display = "none";
+            document.getElementById("openbtn").style.display = "block";
+            document.getElementById("closebtn").style.display = "none";
+            document.getElementById("main-about").style.marginLeft = "0%";
+        }
+        
+        function openNav(){
+            document.getElementById("sidenav").style.display = "block";
+            document.getElementById("openbtn").style.display = "none";
+            document.getElementById("closebtn").style.display = "block";
+            document.getElementById("main-about").style.marginLeft = "18%";
+        }
+    </script>
 </head>
 
 <body>
 
-    <div class="sidenav">
+    <div id="sidenav">
+
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
 
         <div class="logo">
             <h1 style="color:black;">Ria Saini</h1>
@@ -17,7 +36,6 @@
         </div>
 
         
-
         <a href="index.html" class="active">About</a>
         <!-- <a href="projects.html">Projects</a> -->
         <a href="resume.html">Resume</a>
@@ -32,8 +50,10 @@
         
     </div>
 
-    <div class="main">
+    <button id="openbtn" onclick="openNav()" style="display: none;">&#9776; </button> 
 
+    <div class="main" id="main-about">
+        
         <div class="intro">
             <div class="about-header">
                 <h1 class="about-title">Hi! I'm Ria</h1>
