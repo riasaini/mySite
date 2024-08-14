@@ -177,21 +177,3 @@ h2 {
   margin-bottom: 5%;
 }
 
-
-@media (max-width: 768px) {
-  #sidenav{
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .main {
-    margin: 0%;
-  }
-}
-
-@media (max-width: 768px) {
-  #openbtn {
-    display: block;
-  }
-}
