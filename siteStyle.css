@@ -6,7 +6,7 @@ body {
 
 .sidenav {
     height: 25%;
-    width: 48%;
+    width: 18%;
     position: fixed;
     box-sizing:border-box;
     top: 5%;
@@ -36,7 +36,7 @@ body {
   }
 
 .logo {
-    color: #6C6B6B;
+    color: pink;
     text-align: center;
     padding: 14px 16px;
     margin-bottom: 20%;
