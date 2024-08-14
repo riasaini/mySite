@@ -100,11 +100,16 @@ h2 {
   object-fit:cover;
   border-style:solid ;
   border-color: black;
+  display: block;
 }
 
 .about-title {
   font-size: 300%;
   text-align: center;
+}
+
+.about-header {
+  object-fit: contain;
 }
 
 .about {
