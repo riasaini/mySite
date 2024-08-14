@@ -6,11 +6,31 @@
     <link rel="stylesheet" href="siteStyle.css">   
 
     <title>Ria Saini</title>
+
+    <script>
+        function closeNav(){
+            document.getElementById("sidenav").style.display = "none";
+            document.getElementById("openbtn").style.display = "block";
+            document.getElementById("closebtn").style.display = "none";
+            document.getElementById("res-main").style.marginLeft = "0%";
+        }
+        
+        function openNav(){
+            document.getElementById("sidenav").style.display = "block";
+            document.getElementById("openbtn").style.display = "none";
+            document.getElementById("closebtn").style.display = "block";
+            document.getElementById("res-main").style.marginLeft = "23%";
+        }
+    </script>
+
 </head>
 
 <body>
 
     <div id="sidenav">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()" style="display: none;">&times;</a>
+
+
         <div class="logo">
             <h1 style="color:black;">Ria Saini</h1>
             <p>Software Engineer</p>
@@ -30,7 +50,8 @@
         </div>
     </div>
 
-    <div class="resume-main">
+    <div class="resume-main" id="res-main">
+        <button id="openbtn" onclick="openNav()">&#9776; </button> 
 
             <p class="resume-header">Ria Saini</p>
             <p class="resume-subheader">riaksainii@icloud.com</p>
