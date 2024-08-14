@@ -166,11 +166,8 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  #sidenav {
-      display: none;
-  }
 
-  #closebtn {
+  #sidenav #closebtn {
     position: absolute;
     left: 0;
     top: 0%;
@@ -189,6 +186,10 @@ h2 {
     margin: 5%;
     color: black;
     border: none;
+  }
+
+  #sidenav {
+    display: none;
   }
 }
 
