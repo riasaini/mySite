@@ -48,6 +48,14 @@ body {
     border-color: #6C6B6B;
   }
 
+  .contact {
+    display: flexbox;
+    align-items:left;
+    box-sizing:border-box;
+    position: fixed;
+    bottom: 0%;
+  }
+
   .contact-links {
     height: 150%;
     width: 150%;
@@ -65,13 +73,6 @@ body {
     object-fit: contain;
   }
   
-  .contact {
-    display: flexbox;
-    align-items:left;
-    box-sizing:border-box;
-    position: fixed;
-    bottom: 0%;
-  }
 
 .main {
     margin-left: 18%; 
