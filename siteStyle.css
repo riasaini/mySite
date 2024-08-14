@@ -34,6 +34,7 @@ body {
   height: 50px;
   width: 50px;
   text-decoration: none;
+  display: none;
 }
 
 #openbtn {
