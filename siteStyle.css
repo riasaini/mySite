@@ -187,18 +187,18 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  #openbtn {
+  .main {
+    margin: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main #openbtn {
     position: absolute;
     left: 0;
     top: 5%;
     margin: 5%;
     color: black;
     display: contents;
-  }
-}
-
-@media (max-width: 768px) {
-  .main {
-    margin: 0%;
   }
 }
