@@ -7,12 +7,27 @@
 
     <title>Ria Saini</title>
 
+    <script>
+        function openMenu() {
+            document.getElementById("sidenav").style.display = "block";
+            document.getElementById("openbtn").style.display = "none";
+            document.getElementById("closebtn").style.display = "block";
+        }
+    
+        function closeMenu() {
+            document.getElementById("sidenav").style.display = "none";
+            document.getElementById("openbtn").style.display = "block";
+            document.getElementById("closebtn").style.display = "none";
+        }
+    </script>
+
 </head>
 
 <body>
 
     <div id="sidenav">
       
+        <button id="closebtn" onclick="closeMenu()" style="display: none;">hamburgerClose</button>
 
         <div class="logo">
             <h1 style="color:black;">Ria Saini</h1>
@@ -34,6 +49,7 @@
     </div>
 
     <div class="resume-main" id="res-main">
+        <button id="openbtn" onclick="openMenu()">hamburgerOpen</button>
 
             <p class="resume-header">Ria Saini</p>
             <p class="resume-subheader">riaksainii@icloud.com</p>
