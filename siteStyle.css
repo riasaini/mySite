@@ -100,15 +100,14 @@ h2 {
   object-fit:cover;
   border-style:solid ;
   border-color: black;
+  margin: 5%;
 }
 
 .about-title {
   font-size: 300%;
 }
 
-.about-header {
-  object-fit: contain;
-}
+
 
 .about {
     text-align: justify;
