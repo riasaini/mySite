@@ -42,6 +42,7 @@ body {
   top: 5%;
   margin: 5%;
   color: black;
+  display: none;
 }
 
 #sidenav a:hover {
