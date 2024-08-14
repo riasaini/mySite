@@ -183,3 +183,9 @@ h2 {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  #openbtn {
+    display: block;
+  }
+}

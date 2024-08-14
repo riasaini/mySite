@@ -6,11 +6,26 @@
     <link rel="stylesheet" href="siteStyle.css">   
     <title>Ria Saini</title>
 
+<script>
+    function openMenu() {
+        document.getElementById("sidenav").style.display = "block";
+        document.getElementById("openbtn").style.display = "none";
+        document.getElementById("closebtn").style.display = "block";
+    }
+
+    function closeMenu() {
+        document.getElementById("sidenav").style.display = "none";
+        document.getElementById("openbtn").style.display = "block";
+        document.getElementById("closebtn").style.display = "none";
+    }
+</script>
+
 </head>
 
 <body>
 
     <div id="sidenav">
+        <button id="closebtn" onclick="closeMenu()" style="display: none;">hamburgerClose</button>
 
         <div class="logo">
             <h1 style="color:black;">Ria Saini</h1>
@@ -34,6 +49,7 @@
 
 
     <div class="main" id="main-about">
+        <button id="openbtn" onclick="openMenu()" style="display: none;">hamburgerOpen</button>
         
         <div class="intro">
             <div class="about-header">
