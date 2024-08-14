@@ -33,12 +33,16 @@ body {
   border: none;
   height: 50px;
   width: 50px;
+  font-size: larger;
+  background: none;
   text-decoration: none;
   display: none;
 }
 
 #openbtn {
   position: absolute;
+  background: none;
+  font-size: larger;
   left: 0;
   top: 5%;
   margin: 5%;
