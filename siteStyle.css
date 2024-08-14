@@ -100,7 +100,7 @@ h2 {
   object-fit:cover;
   border-style:solid ;
   border-color: black;
-  display: block;
+  position: absolute;
 }
 
 .about-title {
