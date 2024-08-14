@@ -24,30 +24,17 @@ body {
     margin: 5%;
   }
 
-#closebtn {
-  position: absolute;
-  left: 0;
-  top: 0%;
-  margin: 5%;
-  color: black;
-  border: none;
-  height: 50px;
-  width: 50px;
-  text-decoration: none;
+#sidenav #closebtn {
+  display: none;
 }
 
 #openbtn {
-  position: absolute;
-  left: 0;
-  top: 5%;
-  margin: 5%;
-  color: black;
-  border: none;
+  display: none;
 }
 
 #sidenav a:hover {
     color: black;
-    font-size: larger;
+    font-size: larger; 
   }
 
 #sidenav a.active {
@@ -184,11 +171,24 @@ h2 {
   }
 
   #closebtn {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    margin: 5%;
+    color: black;
+    border: none;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
   }
   
   #openbtn {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    margin: 5%;
+    color: black;
+    border: none;
   }
 }
 
