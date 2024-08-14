@@ -96,7 +96,7 @@ body {
   }
   
 
-.main {
+#main-about {
     margin-left: 18%; 
     padding: 5%;
     text-align: center;
@@ -193,7 +193,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .main {
+  #main-about {
     margin-left: 0%;
   }
 }
