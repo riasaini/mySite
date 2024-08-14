@@ -178,11 +178,16 @@ h2 {
     width: 50px;
     text-decoration: none;
   }
+  
+}
 
+@media (max-width: 768px) {
   #sidenav{
     display: none;
   }
+}
 
+@media (max-width: 768px) {
   #openbtn {
     position: absolute;
     left: 0;
@@ -192,6 +197,4 @@ h2 {
     border: none;
     display: block;
   }
-  
 }
-
