@@ -25,10 +25,24 @@ body {
   }
 
 #sidenav #closebtn {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  margin: 5%;
+  color: black;
+  border: none;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
   display: none;
 }
 
 #openbtn {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  margin: 5%;
+  color: black;
   display: none;
 }
 
@@ -165,20 +179,6 @@ h2 {
   margin-bottom: 5%;
 }
 
-@media (max-width: 768px) {
-  #sidenav #closebtn {
-    position: absolute;
-    left: 0;
-    top: 0%;
-    margin: 5%;
-    color: black;
-    border: none;
-    height: 50px;
-    width: 50px;
-    text-decoration: none;
-  }
-  
-}
 
 @media (max-width: 768px) {
   #sidenav{
@@ -194,11 +194,6 @@ h2 {
 
 @media (max-width: 768px) {
   .main #openbtn {
-    position: absolute;
-    left: 0;
-    top: 5%;
-    margin: 5%;
-    color: black;
     display: contents;
   }
 }
