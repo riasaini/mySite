@@ -98,11 +98,8 @@ h2 {
   height: 275px;
   width: 250px;
   object-fit:cover;
-  margin-left: 10%;
   border-style:solid ;
   border-color: black;
-  right: 0;
-  margin-right: 0%;
 }
 
 .about-title {
