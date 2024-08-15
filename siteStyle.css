@@ -142,17 +142,17 @@ h2 {
   font-size: 3.7rem;
   
   animation: 
-    typing .7s steps(20, end) forwards,
-    blink .7s infinite;
+    typing-title .7s steps(20, end) forwards,
+    blink-title .7s infinite;
 
 }
 
-@keyframes typing {
+@keyframes typing-title {
   from { width: 0 }
   to { width: 370px }
 }
 
-@keyframes blink {
+@keyframes blink-title {
   from,to { border-color: transparent }
   50% { border-color: gray; }
 }
@@ -171,8 +171,9 @@ h2 {
     color: black;
     font-size: 130%;
     line-height: 150%;
-    font-family:  Times, 'Times New Roman', serif;
+
   }
+
 
 #res-main {
   margin-left: 23%; 
@@ -229,6 +230,12 @@ h2 {
 @media (max-width: 550px) {
   #main-about {
     margin-left: 0%;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-title {
+    font-size: 40px;
   }
 }
 
