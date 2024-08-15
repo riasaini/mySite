@@ -123,8 +123,8 @@ h2 {
 }
 
 .profile {
-  height: 275px;
-  width: 250px;
+  height: 350px;
+  width: 300px;
   object-fit:cover;
   border-style:solid ;
   border-color: black;
@@ -132,7 +132,29 @@ h2 {
 }
 
 .about-title {
-  font-size: 300%;
+  display: flexbox;
+  text-align: left;
+
+  overflow: hidden;
+  border-right: .1em solid gray;
+  width: 0;
+  white-space: nowrap;
+  font-size: 3.7rem;
+  
+  animation: 
+    typing .7s steps(20, end) forwards,
+    blink .7s infinite;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 370px }
+}
+
+@keyframes blink {
+  from,to { border-color: transparent }
+  50% { border-color: gray; }
 }
 
 .about-heder {
@@ -186,25 +208,25 @@ h2 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   #sidenav{
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   #openbtn {
     display: block;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   #res-main {
     margin-left: 3%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   #main-about {
     margin-left: 0%;
   }
