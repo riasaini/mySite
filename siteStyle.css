@@ -143,7 +143,7 @@ h2 {
   
   animation: 
     typing-title .7s steps(20, end) forwards,
-    blink-title .7s infinite;
+    blink-title .7s steps(20, end) forwards .7s;
 
 }
 
@@ -156,6 +156,8 @@ h2 {
   from,to { border-color: transparent }
   50% { border-color: gray; }
 }
+
+
 
 .about-heder {
   display: flex;
@@ -171,6 +173,7 @@ h2 {
     color: black;
     font-size: 130%;
     line-height: 150%;
+    margin-bottom: 5%;
 
   }
 
