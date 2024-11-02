@@ -254,5 +254,11 @@ h2 {
   }
 }
 
+@media (max-height: 550px) {
+  .contact{
+    display: none;
+  }
+}
+
 
 
