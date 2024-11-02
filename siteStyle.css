@@ -25,10 +25,11 @@ body {
   }
 
 #closebtn {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0%;
-  margin: 4.5%;
+  margin-top: 4.5%;
+  margin-left: 3%;
   color: black;
   border: none;
   font-size: larger;
@@ -38,10 +39,11 @@ body {
 }
 
 #openbtn {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0%;
-  margin: 4.5%;
+  margin-top: 4.5%;
+  margin-left: 3%;
   color: black;
   border: none;
   font-size: larger;
@@ -184,7 +186,7 @@ h2 {
 #res-main {
   margin-left: 23%; 
   text-align: center;
-  margin-right: 3%;
+  margin-right: 5%;
 }
 
 .resume-header {
@@ -228,7 +230,7 @@ h2 {
   }
 
   #res-main {
-    margin-left: 5%;
+    margin-left: 8%;
   }
 
   #main-about {
