@@ -1,7 +1,6 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
-    background-image: url("plainBackground.jpg");
   }
 
 #sidenav {
@@ -160,11 +159,6 @@ h2 {
   50% { border-color: gray; }
 }
 
-
-
-.about-heder {
-  display: flex;
-}
 
 .about {
     text-align: justify;
