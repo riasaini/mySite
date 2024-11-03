@@ -273,8 +273,7 @@ font-size: 17px;
   .profile{
     height: 200px;
     width: 250px;
-    margin-left: 6%;
-    margin-right: 6%;
+    align-self: center;
   }
 
   .about-box{
