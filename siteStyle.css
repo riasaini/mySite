@@ -279,6 +279,35 @@ font-size: 17px;
     grid-column: 1;
   }
 
+  .about{
+    margin: 0%;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .about-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-side{
+    grid-row: 3;
+    grid-column: 1;
+    margin: 0%;
+  }
+
+  .about-sub{
+    margin: 0%;
+    margin-bottom: 10px;
+  }
+
+  .contact{
+    margin: 0%;
+    margin-bottom: 10px;
+  }
+
 }
 
 @media (min-width: 600px) {
