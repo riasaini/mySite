@@ -326,6 +326,10 @@ font-size: 17px;
     margin-bottom: 0%;
   }
 
+  #sidenav a {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
 
 
 }
