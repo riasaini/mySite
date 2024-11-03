@@ -7,11 +7,6 @@ body {
 .about-body{
   background-image: url("back.jpeg");
   background-size: cover;
-  background-repeat: no-repeat;    /* Prevents the image from repeating */
-  background-position: center;     /* Centers the image */
-  height: 100vh;                   /* Sets height to 100% of the viewport */
-  width: 100%;                     /* Ensures full width */
-  overflow: auto; 
 }
 
 
@@ -273,14 +268,14 @@ font-size: 17px;
 
   .about-title {
     font-size: 35px;
-    margin: 15%;
+    margin-left: 10%;
   }
 
   .profile{
     height: 200px;
     width: 250px;
-    margin-left: 20%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .about-box{
@@ -334,8 +329,6 @@ font-size: 17px;
   #sidenav a {
     background-color: rgba(255, 255, 255, 0.8);
   }
-
-
 
 }
 
