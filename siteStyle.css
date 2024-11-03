@@ -268,11 +268,14 @@ font-size: 17px;
 
   .about-title {
     font-size: 35px;
+    margin: 15%;
   }
 
   .profile{
     height: 200px;
     width: 250px;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   .about-box{
