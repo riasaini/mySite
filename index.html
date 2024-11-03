@@ -11,6 +11,8 @@
 
 <script>
     function openMenu() {
+        document.getElementsByClassName("about-body")[0].style.backgroundImage = "url(side_back.jpg)";
+        document.getElementsByClassName("about-body")[0].style.backgroundSize = "cover";
         document.getElementById("sidenav").style.display = "block";
         document.getElementById("openbtn").style.display = "none";
         document.getElementById("closebtn").style.display = "block";
@@ -24,6 +26,8 @@
         document.getElementById("openbtn").style.display = "block";
         document.getElementById("closebtn").style.display = "none";
         document.getElementById("main-about").style.display = "block";
+        document.getElementsByClassName("about-body")[0].style.backgroundImage = "url(back.jpeg)";
+        document.getElementsByClassName("about-body")[0].style.backgroundSize = "cover";
     }
 
     let resizeTimeout;
@@ -43,22 +47,24 @@
 
 <body class = "about-body">
     <button id="closebtn" onclick="closeMenu()" style="display: none;"><i class="fa fa-bars"></i></button>
-
-    <div id="sidenav">
+    <div id="sd" class = "side-container">
+        <div id="sidenav">
         
 
-        <div class="logo">
-            <h1 style="color:black;">Ria Saini</h1>
-            <p>Software Engineer</p>
+            <div class="logo">
+                <h1 style="color:black;">Ria Saini</h1>
+                <p>Software Engineer</p>
+            </div>
+    
+            
+            <a href="index.html" class="active">About</a>
+            <!-- <a href="projects.html">Projects</a> -->
+            <a href="resume.html">CV</a>
+            <!--<a href="contact.html">Contact</a>-->
+    
         </div>
-
-        
-        <a href="index.html" class="active">About</a>
-        <!-- <a href="projects.html">Projects</a> -->
-        <a href="resume.html">CV</a>
-        <!--<a href="contact.html">Contact</a>-->
-
     </div>
+    
 
 
     <div class="main" id="main-about">

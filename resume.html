@@ -10,6 +10,8 @@
 
     <script>
         function openMenu() {
+            document.getElementById("r-main").style.backgroundImage = "url(side_back.jpg)";
+            document.getElementById("r-main").style.backgroundSize = "cover";
             document.getElementById("sidenav").style.display = "block";
             document.getElementById("openbtn").style.display = "none";
             document.getElementById("closebtn").style.display = "block";
@@ -19,6 +21,7 @@
         }
     
         function closeMenu() {
+            document.getElementById("r-main").style.backgroundImage = "none";
             document.getElementById("sidenav").style.display = "none";
             document.getElementById("openbtn").style.display = "block";
             document.getElementById("closebtn").style.display = "none";
@@ -40,7 +43,7 @@
 
 </head>
 
-<body>
+<body id = "r-main">
     <button id="closebtn" onclick="closeMenu()" style="display: none;"><i class="fa fa-bars"></i></button>
     <div id="sidenav">
         <div class="logo">
