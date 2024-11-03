@@ -268,14 +268,13 @@ font-size: 17px;
 
   .about-title {
     font-size: 35px;
-    margin-left: 10%;
   }
 
   .profile{
     height: 200px;
     width: 250px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
   .about-box{
@@ -291,10 +290,12 @@ font-size: 17px;
 
   .about{
     margin: 0%;
+    margin-bottom: 5%;
   }
 
   .more-about{
     margin: 0%;
+    margin-bottom: 5%;
   }
 
 }
