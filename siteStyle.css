@@ -283,6 +283,10 @@ font-size: 17px;
     margin: 0%;
   }
 
+  .more-about{
+    margin: 0%;
+  }
+
 }
 
 @media (max-width: 900px) {
@@ -301,12 +305,14 @@ font-size: 17px;
   .about-sub{
     margin: 0%;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   .contact{
     margin: 0%;
     margin-bottom: 10px;
   }
+
 
 }
 
