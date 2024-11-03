@@ -7,6 +7,11 @@ body {
 .about-body{
   background-image: url("back.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;    /* Prevents the image from repeating */
+  background-position: center;     /* Centers the image */
+  height: 100vh;                   /* Sets height to 100% of the viewport */
+  width: 100%;                     /* Ensures full width */
+  overflow: auto; 
 }
 
 
