@@ -12,6 +12,8 @@
         function openMenu() {
             document.getElementById("r-main").style.backgroundImage = "url(side_back.jpg)";
             document.getElementById("r-main").style.backgroundSize = "cover";
+            document.getElementById("r-main").style.height = "100vh";
+            document.getElementById("r-main").style.overflow = "auto";
             document.getElementById("sidenav").style.display = "block";
             document.getElementById("openbtn").style.display = "none";
             document.getElementById("closebtn").style.display = "block";
@@ -26,6 +28,7 @@
             document.getElementById("openbtn").style.display = "block";
             document.getElementById("closebtn").style.display = "none";
             document.getElementById("res-main").style.display = "block";
+            document.getElementById("r-main").style.height = "auto";
         }
 
         let resizeTimeout;
