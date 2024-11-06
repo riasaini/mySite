@@ -60,7 +60,7 @@ body {
 
 #sidenav a:hover {
   color: black;
-  font-size: larger; 
+  font-size: 30px; 
 }
 
 .logo {
@@ -71,6 +71,7 @@ body {
   margin-bottom: 20%;
   border-bottom: solid;
   border-color: #6C6B6B;
+  margin-right: 3%;
 }
 
 #main-about{
