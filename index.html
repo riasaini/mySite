@@ -89,6 +89,7 @@
         }
     }
 
+
 </script>
 
 </head>
@@ -147,12 +148,12 @@
         
         <p id = "projects-title">Projects</p>
         <div id = "projects">
-                <div class = "project">
-                    <p class= "project-title"  style = "background-image: url(http.jpeg);" onclick="openModal('project1')">Multi Threaded HTTP Server</p>
+                <div class = "project" style = "background-image: url(http.jpeg);">
+                    <p class= "project-title"  onclick="openModal('project1')">Multi Threaded HTTP Server</p>
                 </div>
 
-                <div class = "project" >
-                    <p class= "project-title" style = "background-image: url(project2.jpeg); color: black;" onclick="openModal('project2')">Real Estate Investment Guide</p>
+                <div class = "project" style = "background-image: url(project2.jpeg);">
+                    <p class= "project-title" style = "color: black;" onclick="openModal('project2')">Real Estate Investment Guide</p>
                 </div>
         </div>
 
@@ -280,9 +281,35 @@
                     </div>
     </div>
 
-    </div>
 
-    <div id = "contact-main">
+        <div id = "contact-main">
+            <div id = "contact-head">
+                <p id = "contact-title">Contact Me</p>
+                <p class = "contact-sub" style="font-weight: 800;">Email: <span><a class = "email" href="mailto: riaksainii@gmail.com">riaksainii@gmail.com</a></span> || <span><a class = "email" href="mailto: riaksainii@gmail.com">rsaini36@gatech.com</a></span></p>
+                <p class = "contact-sub" style="font-weight: 800;">Phone: (669)255-9792</p>
+                <p class = "contact-sub" style="padding-bottom: 3%; padding-top: 2%;">...or your can use the following form</p>
+            </div>
+
+            <div id = "form-sections">
+                <form id="contact-form" action="https://formspree.io/f/xzzbrede" method="POST">
+                
+                    <div class = "info">
+                        <input type="text" id="name" name="name" required placeholder= "Your Name *">
+                        <input type="email" id="email" name="email" required placeholder="Your Email *">
+                        <input type="email" id="phone" name="phone" placeholder="Your Phone">
+                    </div>
+
+                    <div class = "text">
+                        <textarea id="message" name="message" required placeholder="Your Message *"></textarea>
+                    </div>
+                
+
+                <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+            
+
 
     </div>
 
