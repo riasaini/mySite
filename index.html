@@ -31,6 +31,30 @@
         document.getElementById("all-body").style.marginLeft = "0%";
     }
 
+    function navClick(page) {
+            document.getElementById("sidenav").style.display = "none";
+            document.getElementById("openbtn").style.display = "block";
+            document.getElementById("closebtn").style.display = "none";
+            document.getElementById("all-body").style.display = "block";
+            document.getElementById("all-body").style.marginLeft = "0%";
+            if (page === "about"){
+                const page = document.getElementById("main-about");
+            } else if (page === "CV") {
+                const page = document.getElementById("res-main");
+            } else if (page === "contact") {
+                const page = document.getElementById("contact-main");
+            } else if (page === "projects") {
+                const page = document.getElementById("projects-main");
+            }
+            page.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+            });
+                
+
+    }
+
     let resizeTimeout;
     function resize() {
         clearTimeout(resizeTimeout);
@@ -78,10 +102,10 @@
         <div class="logo">
             <h1 style="color:black;">Ria Saini</h1>
         </div>          
-        <a href="#main-about">About</a>
-        <a href="#projects-main">Projects</a>
-        <a href="#res-main">CV</a>
-        <a href="#contact-main">Contact</a>   
+        <a href="#main-about" onclick="navClick('about')">About</a>
+        <a href="#projects-main" onclick="navClick('projects')">Projects</a>
+        <a href="#res-main" onclick="navClick('cv')">CV</a>
+        <a href="#contact-main" onclick="navClick('contact')">Contact</a>   
     </div>
 
     <div id = "all-body">
