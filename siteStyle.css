@@ -4,11 +4,9 @@ body {
   background-size: cover;
 }
 
-.about-body{
-  background-image: url("back.jpeg");
-  background-size: cover;
+#all-body {
+  margin: 0%;
 }
-
 
 #sidenav {
   height: 25%;
@@ -17,6 +15,7 @@ body {
   box-sizing:border-box;
   top: 6%;
   transition: 0.5s;
+  display: none;
 }
 
 #sidenav a {
@@ -34,14 +33,13 @@ body {
   position: fixed;
   left: 0;
   top: 0%;
-  margin-top: 4.5%;
-  margin-left: 3%;
+  margin-top: 2%;
+  margin-left: 1%;
   color: black;
   border: none;
-  font-size: larger;
+  font-size: 35px;
   background: none;
   text-decoration: none;
-  display: none;
   background-color: white;
 }
 
@@ -49,27 +47,19 @@ body {
   position: fixed;
   left: 0;
   top: 0%;
-  margin-top: 4.5%;
-  margin-left: 3%;
+  margin-top: 2%;
+  margin-left: 1%;
   color: black;
   border: none;
-  font-size: larger;
+  font-size: 35px;
   background: none;
   text-decoration: none;
-  display: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #sidenav a:hover {
   color: black;
   font-size: larger; 
-}
-
-#sidenav a.active {
-  color: black;
-  width: 90%;
-  box-sizing:border-box;
-  border-style: solid;
 }
 
 .logo {
@@ -82,19 +72,13 @@ body {
   border-color: #6C6B6B;
 }
 
-
-
-
-#main-about {
-  margin-left: 18%; 
+#main-about{
+  background-size: cover;
   padding: 5%;
 }
 
-.intro {
-  margin: 5%;
-}
-
 .about-box{
+  margin: 5%;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
@@ -103,7 +87,6 @@ body {
 .profile {
   grid-column: 1;
   grid-row: 2;
-
   height: 350px;
   width: 400px;
   object-fit:cover;
@@ -136,7 +119,7 @@ body {
   text-align: left;
   overflow: hidden;
   border-right: .1em solid gray;
-  width: 0;
+
   white-space: nowrap;
   font-size: 3.7rem;
 
@@ -187,7 +170,6 @@ body {
 .about {
   text-align: justify;
   text-indent: 50px;
-  margin: 10%;
   margin-top: 0%;
   margin-left: 5%;
   margin-right: 5%;
@@ -205,11 +187,9 @@ body {
   border-style: solid;
 }
 
-
 #res-main {
-  margin-left: 23%; 
   text-align: center;
-  margin-right: 5%;
+  margin: 5%;
 }
 
 .resume-header {
@@ -251,15 +231,113 @@ margin: 0px;
 font-size: 17px;
 }
 
+#projects-main {
+  background-image: url("project-back.jpg");
+  background-size: cover;
+  margin: 0%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#projects-title {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 400%;
+  color: white;
+  margin: 0%;
+}
+
+.project {
+  background-size: cover;
+}
+
+.project-title {
+  background-size:cover;
+  color: white;
+  font-size: 400%;
+  margin: 2%;
+  padding-top: 20vh;
+  padding-left: 3vh;
+}
+
+#projects p:hover {
+  transform: scale(0.95);
+  transition: 0.3s;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: top;
+  
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  align-items: center;
+  margin: 3%;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: black;
+}
+
+.modal-title {
+  font-family:'Franklin Gothic Medium', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.modal-description {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.modal-technologies {
+  font-family:'Franklin Gothic Medium', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.tech {
+  margin: 0%;
+  padding: 0%;
+  text-indent: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.highlight {
+  font-weight: 500;
+}
+
 @media (max-width: 400px) {
-  #sidenav {
-    display: none;
-  }
-
-  #openbtn {
-    display: block;
-  }
-
   #res-main {
     margin: 3%;
   }
@@ -275,8 +353,6 @@ font-size: 17px;
   .profile{
     height: 200px;
     width: 250px;
-    margin-left: 7%;
-    margin-right: 7%;
   }
 
   .about-box{
@@ -298,39 +374,6 @@ font-size: 17px;
   .more-about{
     margin: 0%;
     margin-bottom: 5%;
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  #sidenav{
-    display: none;
-  }
-
-  #openbtn {
-    display: block;
-  }
-
-  #res-main {
-    margin: 3%;
-  }
-
-  #main-about {
-    margin: 0%;
-  }
-
-  .about-title {
-    font-size: 35px;
-  }
-
-  .logo{
-    border-style: none;
-    margin-bottom: 0%;
-  }
-
-  #sidenav a {
-    background-color: rgba(255, 255, 255, 0.8);
   }
 
 }
@@ -359,28 +402,12 @@ font-size: 17px;
   }
 
   .about-title{
-    margin-left: 5%;
+    align-self: center;
+  }
+
+  .profile{
+    align-self: center;
   }
 
 }
 
-@media (min-width: 600px) {
-  #sidenav{
-    display: block;
-  }
-
-  #openbtn {
-    display: none;
-  }
-
-  #closebtn {
-    display: none;
-  }
-
-}
-
-@media (max-height: 550px) {
-  .contact{
-    display: none;
-  }
-}
