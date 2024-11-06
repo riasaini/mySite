@@ -2,9 +2,12 @@ body {
   font-family: 'Times New Roman', Times, serif;
   background-color: white;
   background-size: cover;
+  margin: 0%;
+  padding: 0%;
 }
 
 #all-body {
+  padding: 0%;
   margin: 0%;
 }
 
