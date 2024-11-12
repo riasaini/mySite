@@ -39,8 +39,8 @@ body {
 }
 
 #sidenav a:hover {
-  color: black;
-  font-size: 30px; 
+  color: white;
+  font-size: 25px; 
   cursor: pointer;
 }
 
@@ -426,11 +426,15 @@ font-size: 17px;
 
 @media (max-width: 400px) {
   .logo{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   #sidenav a {
-    font-size: 8px;
+    font-size: 10px;
+  }
+
+  #sidenav a:hover {
+    font-size: 10px;
   }
 
   #contact-main form {
