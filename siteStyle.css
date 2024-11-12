@@ -39,8 +39,7 @@ body {
 }
 
 #sidenav a:hover {
-  color: white;
-  font-size: 25px; 
+  color: lightblue;
   cursor: pointer;
 }
 
@@ -122,13 +121,14 @@ body {
 .contact-links {
   object-fit: contain;
   border-radius: 10%;
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s ease;
 }
 
 .contact-links:hover {
-  height: 160%;
-  width: 160%;
-  max-width: 30px;
-  max-height: 30px;
+  height: 23px;
+  width: 23px;
   object-fit: contain;
   cursor: pointer;
 }
@@ -168,50 +168,6 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   border-color: white;
   border-style: solid;
-}
-
-#res-main {
-  text-align: center;
-  margin: 5%;
-}
-
-.resume-header {
-  font-size: 200%;
-  text-align: center;
-  margin: 0%;
-}
-
-.resume-subheader {
-  color: #6C6B6B;
-  margin: 0%;
-  margin-top: 2%;
-}
-
-h2 {
-  border-bottom: 2px solid;
-  margin-right: 5%;
-  border-color: #6C6B6B;
-  font-weight: 100;
-  text-align: left;
-}
-
-.section-title {
-  margin-top: 25px;
-  text-align: left;
-  line-height: 120%;
-}
-
-.section-subtitle {
-  color: #6C6B6B;
-  text-align: left;
-  line-height: 110%;
-}
-
-.section-info {
-text-align: left;
-line-height: 120%;
-margin: 0px;
-font-size: 17px;
 }
 
 #projects-main {
