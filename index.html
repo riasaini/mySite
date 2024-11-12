@@ -11,26 +11,6 @@
 
 
 <script>
-    function openMenu() {
-        document.getElementById("sidenav").style.width = "18%";
-        document.getElementById("sidenav").style.display = "block";
-        document.getElementById("openbtn").style.display = "none";
-        document.getElementById("closebtn").style.display = "block";
-        document.getElementById("all-body").style.marginLeft = "20%";
-        if (window.innerWidth <= 600) {
-            document.getElementById("all-body").style.display = "none";
-            document.getElementById("sidenav").style.width = "100%";
-        }
-    }
-
-    function closeMenu() {
-        document.getElementById("sidenav").style.display = "none";
-        document.getElementById("openbtn").style.display = "block";
-        document.getElementById("closebtn").style.display = "none";
-        document.getElementById("all-body").style.display = "block";
-        document.getElementById("all-body").style.marginLeft = "0%";
-    }
-
     function navClick(page) {
             if (page === "about"){
                 const page = document.getElementById("main-about");
@@ -90,11 +70,9 @@
 </head>
 
 <body>
-    <button id="openbtn" onclick="openMenu()"><i class="fa fa-bars"></i></button>
-
+   
     <div id="sidenav">
-        <button id="closebtn" onclick="closeMenu()" style="display: none;"><i class="fa fa-bars"></i></button>
-    
+      
         <div class="logo">
             <h1 >Ria Saini</h1>
         </div>          
