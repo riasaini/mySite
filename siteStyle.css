@@ -442,6 +442,10 @@ font-size: 17px;
     flex-direction: column;
   }
 
+  .about-title {
+    font-size: 50px;
+  }
+
   .profile{
     height: 200px;
     width: 250px;
