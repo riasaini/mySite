@@ -20,6 +20,8 @@
                 const page = document.getElementById("contact-main");
             } else if (page === "projects") {
                 const page = document.getElementById("projects-main");
+            } else if (page === "timeline") {
+                const page = document.getElementById("timeline-main");
             }
             page.scrollIntoView({
                 behavior: 'smooth',
@@ -74,14 +76,15 @@
     <div id="sidenav">
       
         <div class="logo">
-            <h1 >Ria Saini</h1>
+            <p>Ria Saini</p>
         </div>          
         
         <div id = "pages">
-            <a href="#main-about" onclick="navClick('about')">About</a>
-            <a href="#projects-main" onclick="navClick('projects')">Projects</a>
-            <a href="#contact-main" onclick="navClick('contact')">Contact</a>  
-            <a href="mysite-resume.pdf" target="_blank"><span style="font-size: 16px;  margin-right: 3px;">📄</span>Resume</a> 
+            <a href="#main-about" onclick="navClick('about')">ABOUT</a>
+            <a href="#projects-main" onclick="navClick('projects')">PROJECTS</a>
+            <a href="#contact-main" onclick="navClick('contact')">CONTACT</a>  
+            <a href="#timeline-main" onclick="navClick('timeline')">TIMELINE</a>  
+            <a href="mysite-resume.pdf" target="_blank" style = "font-weight: 900; "><span style="font-size: 13px;  margin-right: 3px;">📄</span>RESUME</a> 
         </div>
     </div>
 
@@ -163,6 +166,11 @@
 
 
 
+    <div id = "timeline-main">
+        <p id = "timeline-head">TIMELINE</p>
+        <p id = "timeline-sub">A short summary of my professional experiences</p>
+        <img src = "timeline.jpg" id = "timeline-img">
+    </div>
 
 
 
