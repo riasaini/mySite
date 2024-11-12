@@ -50,6 +50,8 @@ body {
   margin-left: 30px;
   align-self: center;
   font-size: 18px;
+  margin-bottom: 0px;
+
 }
 
 #main-about{
@@ -430,7 +432,7 @@ font-size: 17px;
   }
 
   #sidenav a {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   #sidenav a:hover {
@@ -443,7 +445,7 @@ font-size: 17px;
   }
 
   .about-title {
-    font-size: 50px;
+    font-size: 55px;
   }
 
   .profile{
