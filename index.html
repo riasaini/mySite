@@ -32,11 +32,6 @@
     }
 
     function navClick(page) {
-            document.getElementById("sidenav").style.display = "none";
-            document.getElementById("openbtn").style.display = "block";
-            document.getElementById("closebtn").style.display = "none";
-            document.getElementById("all-body").style.display = "block";
-            document.getElementById("all-body").style.marginLeft = "0%";
             if (page === "about"){
                 const page = document.getElementById("main-about");
             } else if (page === "CV") {
@@ -101,12 +96,15 @@
         <button id="closebtn" onclick="closeMenu()" style="display: none;"><i class="fa fa-bars"></i></button>
     
         <div class="logo">
-            <h1 style="color:black;">Ria Saini</h1>
+            <h1 >Ria Saini</h1>
         </div>          
-        <a href="#main-about" onclick="navClick('about')">About</a>
-        <a href="#projects-main" onclick="navClick('projects')">Projects</a>
-        <a href="#res-main" onclick="navClick('cv')">CV</a>
-        <a href="#contact-main" onclick="navClick('contact')">Contact</a>   
+        
+        <div id = "pages">
+            <a href="#main-about" onclick="navClick('about')">About</a>
+            <a href="#projects-main" onclick="navClick('projects')">Projects</a>
+            <a href="#res-main" onclick="navClick('cv')">CV</a>
+            <a href="#contact-main" onclick="navClick('contact')">Contact</a>   
+        </div>
     </div>
 
     <div id = "all-body">
