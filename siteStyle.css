@@ -26,7 +26,8 @@ body {
   display: flex;
   align-self: center;
   margin: auto;
-  gap: 50px;
+  gap: 60px;
+  transition: 0.3s;
 }
 
 #sidenav a {
@@ -413,6 +414,7 @@ body {
 
   #pages {
     gap: 10px;
+    transition: 0.3s;
   }
 
   #sidenav a {
@@ -463,7 +465,10 @@ body {
     width: 70%;
   }
 
-
 }
-
-
+@media (max-width: 750px) {
+  #pages {
+    gap: 30px;
+    transition: 0.3s;
+  }
+}
