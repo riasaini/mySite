@@ -459,6 +459,10 @@ body {
     margin-bottom: 0%;
   }
 
+  #contact-main form button {
+    width: 50%;
+  }
+
 
 }
 
