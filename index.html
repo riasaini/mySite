@@ -12,18 +12,19 @@
 
 <script>
     function navClick(page) {
+            let GOpage;
             if (page === "about"){
-                const page = document.getElementById("main-about");
+                GOpage = document.getElementById("main-about");
             } else if (page === "CV") {
-                const page = document.getElementById("res-main");
+                GOpage = document.getElementById("res-main");
             } else if (page === "contact") {
-                const page = document.getElementById("contact-main");
+                GOpage = document.getElementById("contact-main");
             } else if (page === "projects") {
-                const page = document.getElementById("projects-main");
+                GOpage = document.getElementById("projects-main");
             } else if (page === "timeline") {
-                const page = document.getElementById("timeline-main");
+                GOpage = document.getElementById("timeline-main");
             }
-            page.scrollIntoView({
+            GOpage.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start',
                 inline: 'nearest'
