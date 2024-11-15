@@ -416,6 +416,10 @@ body {
     transition: 0.3s;
   }
 
+  #emoji {
+    font-size: 9px;
+  }
+
   #sidenav a {
     font-size: 11px;
   }
