@@ -412,12 +412,12 @@ body {
 @media (max-width: 600px) {
 
   #pages {
-    gap: 8px;
+    gap: 6px;
     transition: 0.3s;
   }
 
   #emoji {
-    font-size: 9px;
+    font-size: 8px;
   }
 
   #sidenav a {
