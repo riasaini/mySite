@@ -395,9 +395,8 @@ body {
   height: 60px;
   background-color: #007BFF;
   color: white;
-  padding: 10px 15px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 18px;
   border: none;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   cursor: pointer;
@@ -463,6 +462,7 @@ body {
 
   #contact-main form button {
     width: 70%;
+    font-size: 14px;
   }
 
 }
@@ -470,5 +470,6 @@ body {
   #pages {
     gap: 30px;
     transition: 0.3s;
+    
   }
 }
