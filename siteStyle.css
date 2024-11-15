@@ -412,7 +412,7 @@ body {
 @media (max-width: 600px) {
 
   #pages {
-    gap: 10px;
+    gap: 8px;
     transition: 0.3s;
   }
 
