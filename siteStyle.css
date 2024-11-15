@@ -454,6 +454,11 @@ body {
     display: none;
   }
 
+  #contact-form {
+    margin: 5%;
+    margin-bottom: 0%;
+  }
+
 
 }
 
