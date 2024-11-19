@@ -411,6 +411,13 @@ html {
 }
 
 @media (max-width: 600px) {
+  #emoji {
+    display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
 
   #pages {
     gap: 6px;
