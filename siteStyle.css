@@ -425,6 +425,11 @@ html {
     display: none;
   }
 
+  #pages {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
 }
 
 @media (max-width: 600px) {
