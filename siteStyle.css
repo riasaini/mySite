@@ -430,7 +430,7 @@ html {
 @media (max-width: 600px) {
 
   #pages {
-    gap: 6px;
+    gap: 5px;
     transition: 0.3s;
   }
 
