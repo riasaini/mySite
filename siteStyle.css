@@ -170,8 +170,7 @@ body {
 }
 
 #projects-main {
-  background-image: url("project-back.jpg");
-  background-size: cover;
+  background-color: black;
   margin: 0%;
   padding-bottom: 10%;
 }
@@ -192,11 +191,22 @@ body {
 }
 
 #projects-title {
-  padding-top: 5%;
+  padding: 15%;
+  padding-bottom: 3%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 60px;
   text-align: center;
-  font-size: 400%;
   color: white;
   margin: 0%;
+}
+
+#projects-sub {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  color: #C0C0C0;
+  margin: 4%;
 }
 
 .project-title {
