@@ -191,7 +191,7 @@ body {
 }
 
 #projects-title {
-  padding: 15%;
+  padding-top: 20%;
   padding-bottom: 3%;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 60px;
@@ -206,7 +206,7 @@ body {
   font-size: 20px;
   text-align: center;
   color: #C0C0C0;
-  margin: 4%;
+  margin: 5%;
 }
 
 .project-title {
@@ -428,6 +428,7 @@ html {
   #pages {
     margin-left: 3px;
     margin-right: 3px;
+    gap: 4px;
   }
 
 }
