@@ -93,6 +93,7 @@ body {
 }
 
 .about-title {
+  margin-top: 10%;
   font-family: 'Roboto Slab', serif;
   font-size: 60px;
   letter-spacing: 6px;
