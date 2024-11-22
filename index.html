@@ -45,9 +45,23 @@
        if (projectId === "project1") {
             document.getElementById("project1").style.display = "block";
             document.getElementById("project2").style.display = "none";
+            document.getElementById("project3").style.display = "none";
+            document.getElementById("project4").style.display = "none";
        } else if (projectId === "project2") {
             document.getElementById("project2").style.display = "block";
             document.getElementById("project1").style.display = "none";
+            document.getElementById("project3").style.display = "none";
+            document.getElementById("project4").style.display = "none";
+       } else if (projectId === "project3") {
+            document.getElementById("project3").style.display = "block";
+            document.getElementById("project1").style.display = "none";
+            document.getElementById("project2").style.display = "none";
+            document.getElementById("project4").style.display = "none";
+       } else if (projectId === "project4") {
+            document.getElementById("project4").style.display = "block";
+            document.getElementById("project1").style.display = "none";
+            document.getElementById("project2").style.display = "none";
+            document.getElementById("project3").style.display = "none";
        }
        modal.style.display = "flex";
    }
@@ -123,29 +137,40 @@
         <p id = "projects-title">PROJECTS</p>
         <p id = "projects-sub">Here you can see a collection of some of my recent work.</p>
         <div id = "projects">
-                <div class = "project" style = "background-image: url(http.jpeg);">
-                    <p class= "project-title"  onclick="openModal('project1')">Multi Threaded HTTP Server</p>
+                <div class = "project" style = "background-image: url(memes.jpg);">
+                    <p class= "project-title" onclick="openModal('project1')">Hateful Meme Detection</p>
                 </div>
 
                 <div class = "project" style = "background-image: url(project2.jpeg);">
                     <p class= "project-title" style = "color: black;" onclick="openModal('project2')">Real Estate Investment Guide</p>
                 </div>
+
+                <div class = "project" style = "background-image: url(gradcam.jpeg);">
+                    <p class= "project-title"  onclick="openModal('project3')">Network Visualization and Interpretation</p>
+                </div>
+
+                <div class = "project" style = "background-image: url(http.jpeg);">
+                    <p class= "project-title"  onclick="openModal('project4')">Multi Threaded HTTP Server</p>
+                </div>
+                
         </div>
 
         <div id="projectModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
+
                 <div id = "project1">
-                    <p class="modal-title" style="text-align: center;">Multi Threaded HTTP Server</p>
-                    <p class="modal-description">This project is a multi-threaded HTTP server implemented in C, designed to handle multiple concurrent client requests. It features basic request parsing, response formatting, and file handling, with support for concurrent client connections via POSIX threads and read-write locks to ensure safe file access. A thread pool processes incoming requests, where each thread retrieves client connections from a synchronized queue. Using a reader-writer lock mechanism, the server safely manages concurrent access to files, allowing multiple clients to read the same resource while maintaining exclusive access for writes.</p>
-                    <p class="modal-description">The server parses HTTP requests, extracting methods, URIs, headers, and, when needed, validating formats with regular expressions. Depending on the request's result, the server generates responses with appropriate status codes (e.g., 200 OK, 403 Forbidden, 404 Not Found), and formats response headers. Error responses are generated for unsupported methods, bad formats, permission issues, and missing files. A Makefile is included to automate the compilation process, with targets for building, cleaning, and testing, streamlining development and deployment.</p>
+                    <p class="modal-title" style="text-align: center;">Hateful Meme Detection</p>
+                    <p class = "highlight"  style="text-align: center; font-style: italic;">This project is currently in progress, with ongoing refinements to further enhance model performance and project documentation.</p>
+                    <p class="modal-description">This project involves adapting a BERT transformer model and a VGG-16 neural network to detect hateful content in memes by incorporating both image and text modalities. The model was pretrained on the ImageNet dataset to leverage its visual feature extraction capabilities, followed by retraining and fine-tuning on the Hateful Memes dataset to specialize in identifying subtle multimodal patterns of hate speech. By integrating textual and visual data, the model effectively interprets context-dependent cues that are critical for meme analysis.</p>
+                    <p class="modal-description">To evaluate the model’s generalizability, a performance analysis was conducted on the MS COCO dataset, a benchmark multimodal dataset featuring diverse image-text pairs. This evaluation provided insights into the model’s strengths and limitations, enabling iterative modifications to the transformer architecture. These refinements optimized its performance, enhancing its ability to detect nuanced and context-sensitive hateful content in memes.</p>
                     <p class="modal-technologies">Technologies Used:</p>
-                    <p class="tech">- <span class = "highlight">C programming language</span> for low-level network and file handling.</p>
-                    <p class="tech">- <span class = "highlight">POSIX Threads (pthreads)</span> for multi-threading support and concurrency.</p>
-                    <p class="tech">- <span class = "highlight">Regular Expressions</span> for parsing HTTP request headers.</p>
-                    <p class="tech">- <span class = "highlight">File I/O and Memory Management</span> for efficient request processing and response generation.</p>
-                    <p class="tech">- <span class = "highlight">Read-Write Locks and Mutexes</span> for thread-safe file operations.</p>
+                    <p class="tech">- <span class = "highlight">Data Sources:</span> MS COCO, ImageNet, Meta's Hateful Memes Dataset</p>
+                    <p class="tech">- Adapted the <span class = "highlight">BERT transformer model</span> for multimodal analysis, combining advanced natural language processing with visual feature integration.</p>
+                    <p class="tech">- <span class = "highlight">Multimodal Machine Learning:</span>Unified image and text data modalities to improve detection of complex, context-dependent patterns.</p>
+                    <p class="tech">- Other Languages and Tools: <span class = "highlight">Python, Pytorch, TensorFlow</span></p>
                 </div>
+                
                 <div id = "project2">
                     <p class="modal-title" style="text-align: center;">Real Estate Investment Guide</p>
                     <p class="modal-description">In this project, I developed a data-driven Real Estate Investment Guide, designed to empower investors by consolidating and analyzing property metrics across the U.S. This tool presents an interactive dashboard that delivers a suite of customizable metrics tailored for assessing real estate investments. Key investment metrics include property valuation trends, average and median rental yields, cash-on-cash return, cap rate, appreciation potential, vacancy rates, and local economic indicators. Additionally, the tool incorporates Airbnb data to estimate potential short-term rental income, enabling investors to compare long-term and short-term profitability.</p>
@@ -156,6 +181,34 @@
                     <p class="tech">- <span class = "highlight">PostgreSQL</span> for structured data storage and management.</p>
                     <p class="tech">- <span class = "highlight">Tableau</span> for dynamic visualizations and interactivity</p>
                 </div>
+
+                <div id = "project3">
+                    <p class="modal-title" style="text-align: center;">Network Visualization and Interpretation</p>
+                    <p class="modal-description">This project implements visualization techniques to interpret and analyze the decision-making processes of convolutional neural networks.  By leveraging these visualizations we can gain a better understanding of the inner workings and limitations of CNN’s.</p>
+                    <p class="modal-description">Key components of the project include:</p>
+                    <p class="tech">- <span class = "highlight">Class Model Visualizations:</span> Synthesized images that maximize the classification score of specific classes, revealing the network’s focus when identifying features associated with those classes.</p>
+                    <p class="tech">- <span class = "highlight">Class-Specific Saliency Maps:</span> Generated saliency maps to highlight the most influential regions of an image for the network’s classification decisions, providing intuitive explanations for its outputs.</p>
+                    <p class="tech">- <span class = "highlight">Fooling Images:</span> Applied small perturbations to input images that are imperceptible to humans but lead to misclassification by the pretrained network, demonstrating model vulnerabilities.</p>
+                    <p class="tech">- <span class = "highlight">Grad-CAM (Gradient Class Activation Mapping):</span> Visualized the areas of input images that contributed most to the network’s decision, offering a deeper understanding of how spatial regions are weighted in classifications.</p>
+                    <p class="tech">- <span class = "highlight">Style Transfer:</span> Implemented a technique to blend the style of one image with the content of another, creating unique outputs while incorporating smoothness constraints to regularize pixel variations.</p>
+                    <p class="modal-technologies">Technologies Used:</p>
+                    <p class="tech">- <span class = "highlight">Convolutional Neural Networks (CNNs), ResNet:</span> Served as the backbone for classification and visualization tasks.</p>
+                    <p class="tech">- <span class = "highlight">Regularization Methods:</span> Used total variation loss to ensure smoother and more coherent visual outputs.</p>
+                    <p class="tech">- Other Languages and Tools: <span class = "highlight">Python, Pytorch, TensorFlow</span></p>
+                </div>
+
+                <div id = "project4">
+                    <p class="modal-title" style="text-align: center;">Multi Threaded HTTP Server</p>
+                    <p class="modal-description">This project is a multi-threaded HTTP server implemented in C, designed to handle multiple concurrent client requests. It features basic request parsing, response formatting, and file handling, with support for concurrent client connections via POSIX threads and read-write locks to ensure safe file access. A thread pool processes incoming requests, where each thread retrieves client connections from a synchronized queue. Using a reader-writer lock mechanism, the server safely manages concurrent access to files, allowing multiple clients to read the same resource while maintaining exclusive access for writes.</p>
+                    <p class="modal-description">The server parses HTTP requests, extracting methods, URIs, headers, and, when needed, validating formats with regular expressions. Depending on the request's result, the server generates responses with appropriate status codes (e.g., 200 OK, 403 Forbidden, 404 Not Found), and formats response headers. Error responses are generated for unsupported methods, bad formats, permission issues, and missing files. A Makefile is included to automate the compilation process, with targets for building, cleaning, and testing, streamlining development and deployment.</p>
+                    <p class="modal-technologies">Technologies Used:</p>
+                    <p class="tech">- <span class = "highlight">C programming language</span> for low-level network and file handling.</p>
+                    <p class="tech">- <span class = "highlight">POSIX Threads (pthreads)</span> for multi-threading support and concurrency.</p>
+                    <p class="tech">- <span class = "highlight">Regular Expressions</span> for parsing HTTP request headers.</p>
+                    <p class="tech">- <span class = "highlight">File I/O and Memory Management</span> for efficient request processing and response generation.</p>
+                    <p class="tech">- <span class = "highlight">Read-Write Locks and Mutexes</span> for thread-safe file operations.</p>
+                </div>
+
             </div>
         </div>
     </div>
