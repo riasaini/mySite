@@ -457,6 +457,10 @@ html {
     border-radius: 5%;
   }
 
+  #timeline-img {
+    width: 90%;
+  }
+
   #contact-form {
     margin: 20px;
     margin-bottom: 0%;
