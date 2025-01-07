@@ -29,17 +29,6 @@
             });
     }
 
-    let resizeTimeout;
-    function resize() {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
-            if (window.innerWidth >= 500) {
-                location.reload();
-            }
-        }, 100); 
-    }
-    window.onresize = resize;
-
     function openModal(projectId) {
        const modal = document.getElementById("projectModal");
        if (projectId === "project1") {
@@ -88,6 +77,37 @@
         }
     }
 
+    document.addEventListener("scroll", () => {
+        const navLinks = document.querySelectorAll("#sidenav a");
+        let currentId = "";
+        navLinks.forEach(link => {
+            const targetElement = document.querySelector(link.getAttribute("href"));
+            if (targetElement) {
+            const elementTop = targetElement.offsetTop;
+            const elementHeight = targetElement.offsetHeight;
+                if (window.scrollY >= elementTop - elementHeight / 5) {
+                    currentId = targetElement.id;
+                }
+            }
+        });
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${currentId}`) {
+            link.classList.add("active");
+            }
+        });
+    }); 
+
+    let resizeTimeout;
+    function resize() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            if (window.innerWidth >= 500) {
+                location.reload();
+            }
+        }, 200); 
+    }
+    window.addEventListener("resize", handleResize);
 
 </script>
 
@@ -102,10 +122,10 @@
         </div>          
         
         <div id = "pages">
-            <a href="#main-about" onclick="navClick('about')">ABOUT</a>
-            <a href="#projects-main" onclick="navClick('projects')">PROJECTS</a>
-            <a href="#timeline-main" onclick="navClick('timeline')">TIMELINE</a>  
-            <a href="#contact-main" onclick="navClick('contact')">CONTACT</a>  
+            <a href="#main-about" onclick="navClick('about')" >ABOUT</a>
+            <a href="#projects-main" onclick="navClick('projects')" >PROJECTS</a>
+            <a href="#timeline-main" onclick="navClick('timeline')" >TIMELINE</a>  
+            <a href="#contact-main" onclick="navClick('contact')" >CONTACT</a>  
             <a href="mysite-resume.pdf" target="_blank" style = "font-weight: 900; ">📄 RESUME</a> 
         </div>
 

@@ -28,6 +28,12 @@ body {
   transition: 0.3s;
 }
 
+#sidenav a.active {
+  color: #66B2FF;
+  font-weight: bold;
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
 #sidenav a {
   color: white;
   transition: all 0.3s ease;
@@ -40,7 +46,6 @@ body {
 }
 
 #sidenav a:hover {
-  color: #66B2FF;
   cursor: pointer;
 }
 
