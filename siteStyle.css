@@ -12,6 +12,7 @@ body {
   position: fixed;
   background-color: black;
   display: flex;
+  z-index: 1000;
 }
 
 .logo {
@@ -49,6 +50,7 @@ body {
 
 #sidenav a:hover {
   cursor: pointer;
+  font-size: 12px;
 }
 
 .menu-icon {

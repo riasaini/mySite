@@ -65,12 +65,12 @@
     function resize() {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
-            if (window.innerWidth >= 500) {
+            if (window.innerWidth >= 550) {
                 location.reload();
             }
-        }, 200); 
+        }, 50); 
     }
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", resize);
 
 
     function openModal(projectId) {
