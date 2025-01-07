@@ -77,6 +77,17 @@
         }
     }
 
+    menu = false
+    function toggleMenu() {
+        if (menu) {
+            document.getElementById("pages").style.display = "none";
+            menu = false
+        } else {
+            document.getElementById("pages").style.display = "block";
+            menu = true
+        }
+    }
+
 
 </script>
 
@@ -95,13 +106,17 @@
             <a href="#projects-main" onclick="navClick('projects')">PROJECTS</a>
             <a href="#timeline-main" onclick="navClick('timeline')">TIMELINE</a>  
             <a href="#contact-main" onclick="navClick('contact')">CONTACT</a>  
-            <a href="mysite-resume.pdf" target="_blank" style = "font-weight: 900; "><span id = "emoji" style="font-size: 13px;  margin-right: 3px;">📄</span>RESUME</a> 
+            <a href="mysite-resume.pdf" target="_blank" style = "font-weight: 900; ">📄 RESUME</a> 
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span class="bar">-</span>
+            <span class="bar">-</span>
+            <span class="bar">-</span>
         </div>
     </div>
 
     <div id = "all-body">
-
-    
 
     <div class = "about-body">
 
@@ -126,10 +141,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
 
     <div id="projects-main">
@@ -216,6 +227,7 @@
 
 
     <div id = "timeline-main">
+        <p style="color: white;">.</p>
         <p id = "timeline-head">TIMELINE</p>
         <p id = "timeline-sub">A short summary of my professional experiences</p>
         <img src = "timeline.png" id = "timeline-img">
